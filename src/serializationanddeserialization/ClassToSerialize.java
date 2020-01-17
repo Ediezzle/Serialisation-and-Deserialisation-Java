@@ -16,8 +16,8 @@ public class ClassToSerialize implements Serializable
         private int age;
         private String name;
         protected static String companyname;
-        //[NonSerialized]
-        private String accountNumber;
+        //NonSerialized
+        private transient String accountNumber;
         SupportClass supp = new SupportClass();
 
         public ClassToSerialize()
